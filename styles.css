@@ -17,3 +17,15 @@
   body{
     background-color: pink;
   }
+
+  header{
+    display: grid;
+    grid-template-columns: 6fr 1fr 1fr 1fr;
+    padding: 2rem;
+
+    background-color: black;
+    color:antiquewhite;
+  }
+  header p{
+    font-size: large;
+  }
