@@ -18,7 +18,7 @@
     background-color: pink;
   }
 
-  header{
+  .header{
     display: grid;
     grid-template-columns: 6fr 1fr 1fr 1fr;
     padding: 2rem;
@@ -26,6 +26,73 @@
     background-color: black;
     color:antiquewhite;
   }
-  header p{
+  .header p{
     font-size: large;
   }
+
+  img {
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    max-height: 300px;
+  }
+  
+  .boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 1rem;
+  }
+
+  .boxes .box {
+    background-color: antiquewhite;
+    border: 1px solid;
+    text-align: center;
+    padding: 5vw;
+    
+  }
+
+  .boxes .box a {
+    color: black;
+    text-decoration: none;
+    font-size: xx-large;
+  }
+
+  .listi {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+    margin: 1rem;
+  }
+
+  .title {
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .verd {
+    font-size: x-large;
+    text-align: end;
+  }
+
+  .nyjar_vorur {
+    margin-bottom: 1rem;
+    margin: 1rem;
+  }
+
+  .takki {
+    margin:1rem;
+    padding: 9px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: antiquewhite;
+    background-color: black;
+    border: none;
+  }
+
+  .voruflokkar {
+    margin: 1rem;
+  }
+
