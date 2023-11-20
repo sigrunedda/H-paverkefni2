@@ -36,6 +36,11 @@
     object-fit: cover;
     max-height: 300px;
   }
+
+  .spil {
+    display: grid;
+    
+  }
   
   .boxes {
     display: grid;
@@ -50,7 +55,6 @@
     border: 1px solid;
     text-align: center;
     padding: 5vw;
-    
   }
 
   .boxes .box a {
@@ -58,6 +62,7 @@
     text-decoration: none;
     font-size: xx-large;
   }
+
 
   .listi {
     display: grid;
@@ -74,7 +79,6 @@
 
   .verd {
     font-size: x-large;
-    text-align: end;
   }
 
   .nyjar_vorur {
