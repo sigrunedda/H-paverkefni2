@@ -1,28 +1,109 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-    list-style: none;
-  }
- 
-  body{
-    background-color: pink;
-  }
+  margin: 0;
+  padding: 0;
+}
 
-  header{
-    display: grid;
-    grid-template-columns: 6fr 1fr 1fr 1fr;
-    padding: 2rem;
+html {
+  box-sizing: border-box;
+}
 
-    background-color: black;
-    color:antiquewhite;
-  }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  list-style: none;
+}
+
+body{
+  background-color: pink;
+}
+
+.header{
+  display: grid;
+  grid-template-columns: 6fr 1fr 1fr 1fr;
+  padding: 2rem;
+
+  background-color: black;
+  color:antiquewhite;
+}
+.header a{
+  font-size: large;
+  text-decoration: none;
+  color:antiquewhite;
+}
+
+img {
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  max-height: 300px;
+}
+
+.spil {
+  display: grid;
+  
+}
+
+.listi2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.boxess .box {
+  background-color: antiquewhite;
+  border: 1px solid;
+  text-align: center;
+  padding: 5vw;
+}
+
+.boxess .box a {
+  color: black;
+  text-decoration: none;
+  font-size: xx-large;
+}
+
+
+.listi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+  margin: 1rem;
+}
+
+.spil a {
+  font-size: large;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.verd {
+  font-size: large;
+}
+
+.nyjar_vorur {
+  margin-bottom: 1rem;
+  margin: 1rem;
+}
+
+.takki {
+  margin:1rem;
+  padding: 9px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: black;
+  border: none;
+}
+
+.takki a {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+.voruflokkar {
+  margin: 1rem;
+}
