@@ -1,31 +1,25 @@
 import { empty } from "./lib/elements.js";
-import { searchProducts } from "./lib/api.js";
-import { renderFrontpage, categorySite } from "./lib/ui.js";
+import { renderFrontpage, renderCategory } from "./lib/ui.js";
 
-const params = new URLSearchParams(window.location.search);
-const query = params.get('query');
-searchProducts(query);
-const b = document.body;
-await renderFrontpage(b);
+
 
 function route() {
     const { search } = window.location;
   
-    const qs = new URLSearchParams(search);
+    const qs = new URLSearchParams(window.location.search);
   
-    const query = qs.get('query') ?? undefined;
     const id = qs.get('id');
+    const catagory = qs.get('category');
     const parentElement = document.body;
   
-    if (id) {
-        renderFrontpage(parentElement);
+    if (catagory) {
+        renderCategory(parentElement, catagory);       
     } else {
-        return;
+        renderFrontpage(parentElement);
     }
   }
 // Bregst við því þegar við notum vafra til að fara til baka eða áfram.
 window.onpopstate = () => {
-    /* TODO bregðast við */
     empty(document.body);
 
     route();
