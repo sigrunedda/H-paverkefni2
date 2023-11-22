@@ -1,5 +1,5 @@
 import { empty } from "./lib/elements.js";
-import { renderFrontpage, renderCategory } from "./lib/ui.js";
+import { renderFrontpage, renderCategory, renderProducts } from "./lib/ui.js";
 
 
 
@@ -12,7 +12,9 @@ function route() {
     const catagory = qs.get('category');
     const parentElement = document.body;
   
-    if (catagory) {
+    if(id){
+        renderProducts(parentElement, id);
+    }else if (catagory) {
         renderCategory(parentElement, catagory);       
     } else {
         renderFrontpage(parentElement);

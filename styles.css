@@ -18,30 +18,77 @@
     background-color: pink;
   }
 
-  .header{
-    display: grid;
-    grid-template-columns: 6fr 1fr 1fr 1fr;
-    padding: 2rem;
-
+  .header {
     background-color: black;
-    color:antiquewhite;
-  }
-  .header a{
-    font-size: large;
-    text-decoration: none;
-    color:antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
   }
 
-  img {
+  .header .navi {
+    width: 100%;
+    max-width: calc(100% - (2 * var(--offset)));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title {
+    font-size: xx-large;
+    color: antiquewhite;
+  }
+
+  .nav_haegri {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav_haegri ul a {
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  .nav_uppi {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .nav_nidri {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    padding-right: 1rem;
+  }
+  
+  .header .navi ul li a {
+    color: antiquewhite;
+    padding-right: 1rem;
+    text-decoration: none;
+  }
+
+  .mynd {
     width: 100%;
     overflow: hidden;
     object-fit: cover;
     max-height: 300px;
   }
 
-  .spil {
-    display: grid;
-    
+  .texti {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+  }
+
+  .spil .texti .titill {
+    font-weight: bold;
+    font-size: larger;
   }
   
   .listi2 {
@@ -75,14 +122,14 @@
   }
 
   .spil a {
-    font-size: large;
-    font-weight: bold;
+    font-size: medium;
     text-decoration: none;
     color: black;
   }
 
   .verd {
-    font-size: large;
+    font-size: x-large;
+    text-decoration: none;
   }
 
   .nyjar_vorur {
