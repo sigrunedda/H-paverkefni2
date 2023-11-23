@@ -1,0 +1,17 @@
+@media(max-width: 900px){
+    .listi, .listi2 {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    
+  }
+
+  @media(max-width: 501px){
+    .header, .navi {
+      flex-direction: column;
+    }
+    .listi, .listi2 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
