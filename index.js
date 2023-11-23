@@ -1,10 +1,13 @@
-import { empty } from "./lib/elements.js";
-import { renderFrontpage, renderCategory, renderProducts, renderCategories, renderVorulisti } from "./lib/ui.js";
+import { empty } from './lib/elements.js';
+import { renderFrontpage, 
+    renderCategory,
+    renderProducts, 
+    renderCategories, 
+    renderVorulisti } from './lib/ui.js';
 
 
 
 function route() {
-    const { search } = window.location;
   
     const qs = new URLSearchParams(window.location.search);
   

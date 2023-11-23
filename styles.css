@@ -14,9 +14,6 @@
     list-style: none;
   }
  
-  body{
-    background-color: pink;
-  }
 
   .header {
     background-color: black;
@@ -37,7 +34,7 @@
 
   .title {
     font-size: xx-large;
-    color: antiquewhite;
+    color: white;
   }
 
   .nav_haegri {
@@ -67,7 +64,7 @@
   }
   
   .header .navi ul li a {
-    color: antiquewhite;
+    color: white;
     padding-right: 1rem;
     text-decoration: none;
   }
@@ -101,7 +98,7 @@
   }
 
   .boxess .box {
-    background-color: antiquewhite;
+    background-color: white;
     border: 1px solid;
     text-align: center;
     padding: 5vw;
@@ -148,7 +145,7 @@
   }
 
   .takki a {
-    color: antiquewhite;
+    color: white;
     text-decoration: none;
   }
 
@@ -185,4 +182,24 @@
 
   .nafnAcategory{
     padding: 1rem;
+  }
+
+
+
+  @media(max-width: 900px){
+    .listi, .listi2 {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    
+  }
+
+  @media(max-width: 501px){
+    .header, .navi {
+      flex-direction: column;
+    }
+    .listi, .listi2 {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
