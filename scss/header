@@ -1,0 +1,53 @@
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+
+  .header .navi {
+    width: 100%;
+    max-width: calc(100% - (2 * var(--offset)));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title {
+    font-size: xx-large;
+    color: antiquewhite;
+  }
+
+  .nav_haegri {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav_haegri ul a {
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  .nav_uppi {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .nav_nidri {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    padding-right: 1rem;
+  }
+  
+  .header .navi ul li a {
+    color: antiquewhite;
+    padding-right: 1rem;
+    text-decoration: none;
+  }

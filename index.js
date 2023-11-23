@@ -1,5 +1,5 @@
 import { empty } from "./lib/elements.js";
-import { renderFrontpage, renderCategory, renderProducts, renderCategories } from "./lib/ui.js";
+import { renderFrontpage, renderCategory, renderProducts, renderCategories, renderVorulisti } from "./lib/ui.js";
 
 
 
@@ -11,6 +11,7 @@ function route() {
     const id = qs.get('id');
     const catagory = qs.get('category');
     const categories = qs.get('categories');
+    const products = qs.get('products');
     const parentElement = document.body;
   
     if(id){
@@ -18,7 +19,9 @@ function route() {
     }else if (catagory) {
         renderCategory(parentElement, catagory);  
     } else if (categories){
-        renderCategories(parentElement, id)
+        renderCategories(parentElement);
+    }else if (products){
+        renderVorulisti(parentElement);
     } else {
         renderFrontpage(parentElement);
     }
